@@ -203,7 +203,7 @@ function configDiagrama(roomId) {
     },
   });
   const token = localStorage.getItem("token");
-  const socket = io.connect("http://localhost:3000");
+  const socket = io.connect("http://54.242.7.166");
   socket.emit("joinRoom", {roomId, token});
   myDiagram.socket = socket;
   myDiagram.roomId = roomId;

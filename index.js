@@ -208,7 +208,7 @@ app.get('/api/room/:roomId/users', (req, res) => {
 });
 
 http.listen(process.env.PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${process.env.PORT}`);
+  console.log(`Servidor escuchando en http://54.242.7.166:${process.env.PORT}`);
 });
 
 // for allow parser json

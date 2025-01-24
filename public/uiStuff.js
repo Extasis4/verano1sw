@@ -1,6 +1,6 @@
 
 
-var baseurl = "http://localhost:3000/"
+var baseurl = "http://54.242.7.166"
 
 
 $(document).ready(function () {
