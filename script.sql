@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS users (
+id SERIAL PRIMARY KEY,
+name VARCHAR(255) ,
+age INTEGER 
+);
+
+ALTER TABLE users ADD COLUMN role_id INTEGER;
+ALTER TABLE users ADD CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES roles (id);
+
+ALTER TABLE comments ADD COLUMN user_id INTEGER;
+ALTER TABLE comments ADD CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users (id);
+

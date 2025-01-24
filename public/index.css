@@ -1,0 +1,154 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #0B6477;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón de eliminar en la lista */
+  .eliminar-diagrama {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .eliminar-diagrama:hover {
+    background-color: darkred;
+  }
+
+  /* Ajuste para alinear el botón de eliminar a la derecha */
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .topbar {
+    position: relative;
+    background-color: #0B6477;
+    height: 60px;
+  }
+  .topbar-brand {
+    font-weight: bold;
+    color: #333;
+  }
+  .topbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .topbar-menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .topbar-menu li:last-child {
+    margin-right: 0;
+  }
+  .topbar-menu-link {
+    color: #333;
+    text-decoration: none;
+  }
+  .topbar-message {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+    color: #333;
+    font-weight: normal;
+    font-style: italic;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+
+  .guest-cursor {
+    position: absolute;
+    width: 20px; /* Ancho deseado */
+    height: 20px; /* Alto deseado */
+    transition: transform 0.2s ease-in-out; /* Establece una transición suave */
+  }
+  .guest-name {
+    position: absolute;
+    top: -20px; /* Ajusta esta propiedad para la posición vertical */
+    left: 0; /* Ajusta esta propiedad para la posición horizontal */
+    /* Estilos adicionales para el nombre */
+  }
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #0B6477;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+
